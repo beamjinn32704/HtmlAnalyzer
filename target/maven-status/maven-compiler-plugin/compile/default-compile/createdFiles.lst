@@ -1,0 +1,6 @@
+com\mindblown\htmlanalyzer\HtmlTagData.class
+com\mindblown\htmlanalyzer\Attrib$AttribScanner.class
+com\mindblown\htmlanalyzer\HtmlTag.class
+com\mindblown\htmlanalyzer\Attrib.class
+com\mindblown\htmlanalyzer\HtmlElements.class
+com\mindblown\htmlanalyzer\HtmlScanner.class
