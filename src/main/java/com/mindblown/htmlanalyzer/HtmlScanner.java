@@ -2,7 +2,6 @@ package com.mindblown.htmlanalyzer;
 
 
 import com.mindblown.util.FileUtil;
-import com.mindblown.util.Util;
 import java.io.File;
 import java.util.Arrays;
 

@@ -1,7 +1,6 @@
 package com.mindblown.htmlanalyzer;
 
 
-import com.mindblown.util.Util;
 import java.util.Arrays;
 
 /*
@@ -29,7 +28,7 @@ public class HtmlTag implements Comparable<HtmlTag>{
     }
     
     public static boolean isTag(String l, String front, String back, String attrib){
-        String line = Util.strip(l);
+        String line = l.strip();
         return (line.startsWith(front) && line.endsWith(back) && line.contains(attrib + "=\""));
     }
 

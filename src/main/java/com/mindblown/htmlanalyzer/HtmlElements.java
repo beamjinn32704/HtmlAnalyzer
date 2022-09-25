@@ -124,7 +124,6 @@ public class HtmlElements {
             //Then, add that string to the HTML source
             HtmlTag tag = tags.get(i);
             htmlSource += tag.toString();
-//            ..//FIX THIS! IT DOESN'T WORK FULLY YET!!!
             if(i < tags.size() - 1){
                 //If there are still more tags, add a new line for the next tag.
                 htmlSource += "\n";

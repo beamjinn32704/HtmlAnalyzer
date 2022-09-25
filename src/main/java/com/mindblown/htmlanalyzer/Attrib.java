@@ -3,7 +3,6 @@ package com.mindblown.htmlanalyzer;
 
 import com.mindblown.util.ArrayListUtil;
 import com.mindblown.util.ArrayUtil;
-import com.mindblown.util.Util;
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -65,7 +64,7 @@ public class Attrib implements Comparable<Object>{
         }
         
         public Attrib nextTrib(){
-            line = Util.strip(line);
+            line = line.strip();
             int equals = line.indexOf("=");
             if(equals < 0){
                 return null;
@@ -75,7 +74,7 @@ public class Attrib implements Comparable<Object>{
             if(tribName == null || tribVal == null){
                 return null;
             }
-            line = Util.strip(line);
+            line = line.strip();
             return new Attrib(tribName, tribVal);
         }
         
@@ -136,7 +135,7 @@ public class Attrib implements Comparable<Object>{
             } else {
                 line = "";
             }
-            line = Util.strip(line);
+            line = line.strip();
             return val;
         }
         
@@ -164,7 +163,7 @@ public class Attrib implements Comparable<Object>{
                 nameStart = 0;
             }
             String tribName = line.substring(nameStart, nameEnd+1);
-            line = Util.strip(line);
+            line = line.strip();
             return tribName;
         }
     }

@@ -32,11 +32,11 @@ public class HtmlTagData implements Comparable<HtmlTagData> {
 //        Arrays.sort(tribs);
     }
 
-    public String getParentInsidee() {
+    public String getParentInside() {
         return parentInside;
     }
 
-    public void setParentInsidee(String parentInside) {
+    public void setParentInside(String parentInside) {
         this.parentInside = parentInside;
     }
 
